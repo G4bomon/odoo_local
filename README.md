@@ -205,5 +205,3 @@ For issues with:
 ## License
 
 - Odoo: LGPL-3
-- Fleet module: LGPL-3
-- Fleet Vessels module: LGPL-3

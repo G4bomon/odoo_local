@@ -50,8 +50,10 @@ services:
 
 volumes:
   odoo-db-data:
+    name: odoo-db-data
     driver: local
   odoo-web-data:
+    name: odoo-web-data
     driver: local
 
 networks:

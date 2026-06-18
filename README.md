@@ -52,18 +52,7 @@ http://localhost:8069
 
 1. Go to **Apps** menu
 2. Remove the "Apps" filter
-3. Search for "Fleet Vessels"
-4. You should see both modules installed:
-   - ✅ Fleet
-   - ✅ Fleet Vessels
-
-### 5. Test Vessel Functionality
-
-1. Go to **Fleet** → **Configuration** → **Models**
-2. Click **Create**
-3. In the **Vehicle Type** field, select **Vessel**
-4. You should see the **Vessel Information** tab appear
-5. Fill in vessel details and save
+3. Install modulo_ejemplo
 
 ## Docker Commands
 
@@ -125,19 +114,6 @@ docker-compose down
 docker-compose up -d
 ```
 
-## Directory Structure
-
-```
-odoo_fleet/
-├── docker-compose.yml          # Docker Compose configuration
-├── Dockerfile                  # Custom Odoo image
-├── config/
-│   └── odoo.conf              # Odoo configuration file
-├── fleet/                     # Original Fleet module
-│   └── ...
-└── fleet_vessels/             # Fleet Vessels extension
-    └── ...
-```
 
 ## Volumes
 
@@ -197,15 +173,6 @@ docker-compose restart odoo
 sudo chown -R $USER:$USER fleet fleet_vessels config
 ```
 
-## Demo Data
-
-The `fleet_vessels` module includes demo data with:
-- 3 vessel brands (Azimut Yachts, Maersk, Sunseeker)
-- 3 vessel models
-- 3 vessel instances with complete information
-
-To load demo data, the module is installed with demo data enabled by default.
-
 ## Production Considerations
 
 This setup is for **development and testing only**. For production:
@@ -234,7 +201,6 @@ docker-compose down -v
 For issues with:
 - **Odoo**: Check [Odoo Documentation](https://www.odoo.com/documentation/19.0/)
 - **Docker**: Check [Docker Documentation](https://docs.docker.com/)
-- **Fleet Vessels Module**: See `fleet_vessels/README.md`
 
 ## License
 

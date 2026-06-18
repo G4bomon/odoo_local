@@ -1,6 +1,6 @@
 # Odoo Fleet with Vessels - Docker Environment
 
-This directory contains a complete Docker environment to run Odoo with the Fleet and Fleet Vessels modules.
+This directory contains a complete Docker environment to run Odoo.
 
 ## Prerequisites
 
